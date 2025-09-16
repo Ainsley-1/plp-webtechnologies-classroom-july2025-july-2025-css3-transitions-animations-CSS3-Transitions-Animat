@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+      <header>
+        <h1>CSS & JavaScript Animation Showcase</h1>
+        <p>Explore the power of CSS transitions, animations, and JavaScript control</p>
+    </header>
+
+    <div class="container">
+        <!-- Part 1: CSS Transitions -->
+        <div class="card">
+            <h2>CSS Transitions</h2>
+            <div class="box transition-box" id="transitionBox"></div>
+            <div class="control-panel">
+                <button class="btn" id="enlargeBtn">Enlarge</button>
+                <button class="btn" id="moveBtn">Move & Rotate</button>
+                <button class="btn" id="resetBtn">Reset</button>
+            </div>
+            <div class="status" id="transitionStatus">Current state: Default</div>
+        </div>
+
+        <!-- Part 2: Keyframe Animations -->
+        <div class="card">
+            <h2>Keyframe Animations</h2>
+            <div class="circle" id="animatedCircle"></div>
+            <div class="control-panel">
+                <button class="btn" id="bounceBtn">Bounce</button>
+                <button class="btn" id="pulseBtn">Pulse</button>
+                <button class="btn" id="spinBtn">Spin</button>
+                <button class="btn" id="shakeBtn">Shake</button>
+                <button class="btn" id="stopBtn">Stop</button>
+            </div>
+            <div class="status" id="animationStatus">Current animation: None</div>
+        </div>
+
+        <!-- Part 3: Combined Effects -->
+        <div class="card">
+            <h2>Combined Effects</h2>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">FRONT</div>
+                    <div class="flip-card-back">BACK</div>
+                </div>
+            </div>
+            <div class="control-panel">
+                <button class="btn" id="flipBtn">Flip Card</button>
+                <button class="btn" id="modalBtn">Show Modal</button>
+            </div>
+            <div class="status" id="effectStatus">Card is not flipped</div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2>Animated Modal</h2>
+            <p>This modal appears with a smooth fade and slide animation!</p>
+            <p>All triggered by JavaScript manipulating CSS classes.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
